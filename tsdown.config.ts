@@ -33,12 +33,9 @@ export default defineConfig({
             import: './index.mjs',
             require: './index.cjs',
           },
-          './constants': {
-            import: './constants.mjs',
-            require: './constants.cjs',
-          },
         },
       },
+      resolveWorkspaceDeps: true,
     }),
     copy({
       targets: [
